@@ -17,7 +17,7 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.Imag
     ArrayList<String> data = new ArrayList<>();
 
     public ImageListAdapter() {
-        for(int i = 0; i< 50 ;i ++) {
+        for(int i = 0; i< 2 ;i ++) {
             data.add("hello");
         }
     }
