@@ -31,7 +31,7 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.Imag
 
     @Override
     public void onBindViewHolder(@NonNull ImageListViewHolder holder, int position) {
-        holder.listItemText.setText(data.get(position));
+
     }
 
     @Override
@@ -44,7 +44,7 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.Imag
         public ImageListViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            listItemText = itemView.findViewById(R.id.list_item_text);
+            listItemText = itemView.findViewById(R.id.list_item_reward_headline_tv);
         }
     }
 }

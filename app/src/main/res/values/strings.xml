@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RecyclerViewSeries</string>
+    <string name="content_description_cup_image">cup image</string>
+    <string name="random_placeholder_text">Random Placeholder Text</string>
 </resources>
