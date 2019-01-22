@@ -1,6 +1,7 @@
 package com.dhruvam.recyclerviewseries.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,5 +30,8 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager manager = new LinearLayoutManager(this);
         manager.setOrientation(RecyclerView.VERTICAL);
         mMainList.setLayoutManager(manager);
+
+        RecyclerView.ItemDecoration itemDecoration = new com.dhruvam.recyclerviewseries.data.DividerItemDecoration(getResources().getDrawable(R.drawable.divider));
+        mMainList.addItemDecoration(itemDecoration);
     }
 }
