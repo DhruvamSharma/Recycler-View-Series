@@ -38,6 +38,17 @@
 
         app:layout_constraintTop_toBottomOf="@id/price_tv"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bar_code_layout"/>
+
+    <include layout="@layout/bar_code_layout"
+        android:id="@+id/bar_code_layout"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_list"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
