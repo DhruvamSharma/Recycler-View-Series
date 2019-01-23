@@ -6,9 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
+    <ImageView
+        android:id="@+id/starbucks_card_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/starbucks_card"
+        android:scaleType="fitXY"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/price_tv"/>
+
+    <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        android:text="@string/price_text"
+
+        app:layout_constraintTop_toBottomOf="@id/starbucks_card_image_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/main_list"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/main_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/price_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
