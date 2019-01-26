@@ -9,9 +9,10 @@
     <ImageView
         android:id="@+id/starbucks_card_image_iv"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:src="@drawable/starbucks_card"
         android:scaleType="fitXY"
+        android:elevation="16dp"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"

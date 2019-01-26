@@ -22,7 +22,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/random_placeholder_text"
-        android:textStyle="bold"
+        android:textColor="@android:color/black"
 
         app:layout_constraintStart_toEndOf="@id/list_item_cup_iv"
         app:layout_constraintTop_toTopOf="@id/list_item_cup_iv"
@@ -34,7 +34,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
-        android:text="@string/random_placeholder_text"
 
         app:layout_constraintStart_toStartOf="@id/list_item_reward_headline_tv"
         app:layout_constraintTop_toBottomOf="@id/list_item_reward_headline_tv"
