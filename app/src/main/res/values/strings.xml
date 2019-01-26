@@ -4,4 +4,8 @@
     <string name="random_placeholder_text">Random Placeholder Text</string>
     <string name="price_text">₹ 920.00</string>
     <string name="scanner_text">Scan this text to redeem your rewards or pay. \n Last updated: Jan 20, 05:05 PM</string>
+    <string name="size_upgrade_text">Free Size Upgrade on Featured Beverages</string>
+    <string name="size_upgrade_caption_text">Expires on Jan 29, 2019</string>
+    <string name="free_drink_caption_text">Expires on Dec 03, 2019</string>
+    <string name="free_drink_text">Free Tal Drink on purchase of 250g Whole Bean</string>
 </resources>

@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#9f7d00">
+        android:background="@color/colorPrimary">
 
         <TextView
             android:id="@+id/price_tv"
