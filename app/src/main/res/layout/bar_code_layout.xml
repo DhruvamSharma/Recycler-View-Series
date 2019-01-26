@@ -34,7 +34,7 @@
             android:layout_margin="32dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/white"
             android:text="@string/scanner_text"/>
 
         <TextView
@@ -43,6 +43,7 @@
             android:layout_margin="16dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="@android:color/white"
             android:layout_gravity="center"
             android:text="EXIT"/>
 

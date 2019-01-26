@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/starbucks_card_image_iv"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:src="@drawable/starbucks_card"
         android:scaleType="fitXY"
 
@@ -22,8 +22,8 @@
         android:id="@+id/price_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
-        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/black"
         android:text="@string/price_text"
 
         app:layout_constraintTop_toBottomOf="@id/starbucks_card_image_iv"
@@ -34,7 +34,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/main_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
 
         app:layout_constraintTop_toBottomOf="@id/price_tv"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,12 +43,11 @@
 
     <include layout="@layout/bar_code_layout"
         android:id="@+id/bar_code_layout"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_width="0dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_list"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

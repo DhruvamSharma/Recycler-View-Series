@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         manager.setOrientation(RecyclerView.VERTICAL);
         mMainList.setLayoutManager(manager);
 
-        RecyclerView.ItemDecoration itemDecoration = new com.dhruvam.recyclerviewseries.data.DividerItemDecoration(getResources().getDrawable(R.drawable.divider));
-        mMainList.addItemDecoration(itemDecoration);
+        RecyclerView.ItemDecoration itemDecoration = new
+                com.dhruvam.recyclerviewseries.data.DividerItemDecoration(getResources().getDrawable(R.drawable.divider));
+        //mMainList.addItemDecoration(itemDecoration);
     }
 }
