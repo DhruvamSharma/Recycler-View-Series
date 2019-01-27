@@ -1,6 +1,9 @@
 package com.dhruvam.recyclerviewseries.data;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,11 +11,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dhruvam.recyclerviewseries.R;
-import com.dhruvam.recyclerviewseries.ui.MainActivity;
+import com.dhruvam.recyclerviewseries.ui.RewardDetail;
 
 import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.ImageListViewHolder> {
@@ -24,7 +29,7 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.Imag
         for(int i = 0; i< 2 ;i ++) {
             data.add("hello");
         }
-        this.context = context.getApplicationContext();
+        this.context = context;
     }
 
     @NonNull
@@ -56,11 +61,23 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.Imag
     public class ImageListViewHolder extends RecyclerView.ViewHolder{
         TextView listItemText, listItemCaption;
         ImageView reward;
-        public ImageListViewHolder(@NonNull View itemView) {
+        public ImageListViewHolder(@NonNull final View itemView) {
             super(itemView);
             reward = itemView.findViewById(R.id.list_item_cup_iv);
             listItemText = itemView.findViewById(R.id.list_item_reward_headline_tv);
             listItemCaption = itemView.findViewById(R.id.list_item_reward_caption_tv);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        reward.setTransitionName("heroTransition");
+                        Pair<View, String> pair = Pair.create((View) reward, reward.getTransitionName());
+                        ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation((Activity) context, pair);
+                        context.startActivity(new Intent(context, RewardDetail.class), optionsCompat.toBundle());
+                    }
+                }
+            });
         }
     }
 }
