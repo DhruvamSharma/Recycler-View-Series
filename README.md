@@ -4,7 +4,7 @@ This article is a part of the recyclerview series that I started and this reposi
 
 In this part I try to help with Item Decorations in RecyclerViews and how to master them. These parts like the others will be as easy to understand and implement. With visual help ofcourse! Happy reading :)
 
-### The link to this project's tutorial: <a href="https://android.jlelse.eu/part-4-item-decorations-in-recyclerview-133cd8c218bb" >Link to project</a>
+### The link to this project's tutorial: <a href="https://android.jlelse.eu/part-4-item-decorations-in-recyclerview-133cd8c218bb" >Link to article</a>
 
 The link to the starting article is here: https://android.jlelse.eu/understanding-recyclerview-a-high-level-insight-part-1-dc3f81af5720
 
